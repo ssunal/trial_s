@@ -35,8 +35,9 @@ return true;}
   function getDataFromURL($page_number,$bloolean) {
     $api_key='3NLTTNlXsi6rBWl7nYGluOdkl2htFHug';
     $url1 = 'http://trialapi.craig.mtcdevserver.com/api/properties?api_key='.$api_key.'&page[number]='.$page_number;
-
-      'http' => array(
+    $context = stream_context_create(array(
+         'http' => array(
+    
           'method' => 'GET',
           'header' => 'Content-type: application/x-www-form-urlencoded',
 
