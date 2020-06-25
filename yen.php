@@ -131,7 +131,7 @@ $previous_number=$page-1;
               $address='';
               $price='';
               $property_type_id=$jsonx->property_type_id;
-              $description=$jsonx->description;
+
               $county=$jsonx->county;
               $country=$jsonx->country;
               $address=$jsonx->address;
